@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/tnpm-sync.svg?style=flat)](https://npmjs.org/package/tnpm-sync) [![NPM downloads](http://img.shields.io/npm/dm/tnpm-sync.svg?style=flat)](https://npmjs.org/package/tnpm-sync) [![Install size](https://badgen.net/packagephobia/install/tnpm-sync)](https://packagephobia.now.sh/result?p=tnpm-sync)
 
-> 同步 npm 官方源到 tnpm 私有源，解决包发布后，私有源没有同步不及时的问题。
+> 同步 npm 官方源到 tnpm 私有源，解决包发布后，私有源同步不及时的问题。
 
 ## 特性
 
