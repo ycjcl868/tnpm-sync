@@ -8,7 +8,7 @@
   },
   "scripts": {
     "prepublishOnly": "np --yolo --no-publish --tag=latest",
-    "postpublish": "node ./bin/index.js",
+    "postpublish": "node ./bin/index.js"
   },
   "repository": {
     "type": "git",
