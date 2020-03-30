@@ -41,7 +41,8 @@ module.exports = function (args) {
   const {
     cwd = process.cwd(),
     packages = [],
-    command = 'tnpm sync'
+    command = 'tnpm sync',
+    timeout = 20000,
   } = args;
   const pkgs = Array.isArray(packages) && packages.length > 0
     ? packages
@@ -60,7 +61,7 @@ module.exports = function (args) {
     setTimeout(() => {
       // 15s timeout
       subprocess.cancel();
-  }, 15000);
+  }, timeout);
     subprocess.stdout.pipe(process.stdout);
     return subprocess;
   });

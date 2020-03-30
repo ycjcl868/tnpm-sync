@@ -18,6 +18,7 @@ async function bootstrap() {
     cwd,
     packages: argv.packages ? argv.packages.split(',') : [],
     command: argv.command || 'tnpm sync',
+    timeout: argv.timeout || 20000,
   });
 }
 
