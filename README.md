@@ -51,3 +51,13 @@ tnpmSync({
 // getPackages(process.cwd());
 // => 获取当前目录下，可同步的包
 ```
+
+通过 npm scripts hook，在包发布后同步，只需在 `package.json` 里配置：
+
+```json
+{
+  "scripts": {
+    "postpublish": "tnpm-sync"
+  }
+}
+```
